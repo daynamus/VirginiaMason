@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spender or Saver</title>
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+<body>
+
+<ul id="menu">
+</ul>
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="conainer">
+            <h1>Welcome!</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <li data-menuanchor="question1"><a href="#question1">START</a>
+        </li>
+    </div>
+    <div class="section active" id="section1">
+        <div class="intro">
+            <h1>QUESTION 1</h1>
+            <br>
+            <div class="agecont">
+                <div class="agegender">
+                    <input id="radiomale" class="radio_item" type="radio" name="gender" value="male">
+                    <label class="genderlabel" for="radiomale">
+                        <img src="./images/male.jpg">
+                    </label>
+                    <br>
+                    <span class="">MALE</span>
+                </div>
+            <div class="agegender">
+                    <input id="radiofemale" class="radio_item" type="radio" name="gender" value="male">
+                    <label class="genderlabel" for="radiofemale">
+                        <img src="./images/female.jpg">
+                    </label>
+                    <br>
+                    <span class="">MALE</span>
+                </div>
+                <br class="clearfix">
+            <input type="range" min="16" max="100" step="16.6" list="steplist">
+            <datalist id="steplist">
+                <option><30</option>
+                <option>31-40</option>
+                <option>41-50</option>
+                <option>50+</option>
+            </datalist>
+            <div class="col3 agelist">
+                <p><30</p>
+            </div>
+            <div class="col3 agelist">
+                <p>31-40</p>
+            </div>
+            <div class="col3 agelist">
+                <p>41-50</p>
+            </div>
+            <div class="col3 agelist">
+                <p>51+</p>
+            </div>
+
+                <div class="swicthcont">
+                    <p class="fleft">Selection1</p>
+                    <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                    </label>
+                    <p class="fright">Selection2</p>
+                </div>
+
+
+            </div>
+            <br class="clearfix">
+        <li data-menuanchor="question2" class="clearfix"><a href="#question2">NEXT</a></li>
+		</div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>QUESTION 2</h1>
+            <li data-menuanchor="question1"><a href="#question1">BACK</a></li>
+            <li data-menuanchor="question3"><a href="#question3">NEXT</a></li>
+        </div>
+    </div>
+
+
+<!--     
+    <div class="section" id="section3">
+        <div class="slide"> Slide 1 <img src="./images/slide1.jpg"></i></div>
+        <div class="slide"> Slide 2 <img src="./images/slide2.jpg"> </div>
+        <div class="slide"> Slide 3 <img src="./images/slide3.jpg"> </div>
+        <div class="slide"> Slide 4 <img src="./images/slide4.jpg"> </div>
+    </div> 
+-->
+
+    
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>QUESTION 3</h1>
+            <li data-menuanchor="question2"><a href="#question2">BACK</a></li>
+            <li data-menuanchor="homepage"><a href="#homepage">RESTART</a></li>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['homepage', 'question1', 'question2', 'question3', 'question4'],
+        menu: '#menu',
+        lazyLoad: true
+    });
+</script>
+
+</body>
+</html>
